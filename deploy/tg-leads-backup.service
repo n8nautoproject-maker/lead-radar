@@ -1,0 +1,13 @@
+[Unit]
+Description=tg-leads: ежедневная копия базы заявок
+
+[Service]
+Type=oneshot
+User=tgleads
+WorkingDirectory=/opt/tg-leads
+ExecStart=/opt/tg-leads/deploy/backup.sh
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+ReadWritePaths=/opt/tg-leads

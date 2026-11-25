@@ -1,0 +1,10 @@
+.env
+*.session
+*.session-journal
+data/
+backups/
+certs/
+keywords.json
+.venv/
+venv/
+__pycache__/
